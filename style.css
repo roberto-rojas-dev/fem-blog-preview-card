@@ -1,4 +1,4 @@
-/* IMPORTED ASSETS */
+/* ----------- IMPORTED ASSETS ----------- */
 
 @font-face {
   font-family: "Figtree";
@@ -6,7 +6,7 @@
 }
 
 
-/* CUSTOM PROPS */
+/* ----------- CUSTOM PROPS ----------- */
 
 :root{
   --clr-yellow: hsl(47, 88%, 63%);
@@ -27,7 +27,7 @@
 }
 
 
-/* RESET */
+/* ----------- RESET ----------- */
 
 *{
  margin: 0;
@@ -48,7 +48,7 @@ a{
 }
 
 
-/* UTILITY CLASSES */
+/* ----------- UTILITY CLASSES ----------- */
 
 .sr-only {
   position: absolute;
@@ -62,7 +62,7 @@ a{
 }
 
 
-/* LAYOUT */
+/* ----------- LAYOUT ----------- */
 
 body{
   background: var(--clr-yellow);
