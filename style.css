@@ -1,0 +1,158 @@
+/* IMPORTED ASSETS */
+
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+
+/* CUSTOM PROPS */
+
+:root{
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-500: hsl(0, 0%, 42%);
+  --clr-gray-950: hsl(0, 0%, 7%);
+
+  --ff-base: "Figtree", sans-serif;
+
+  --fs-350: 0.875rem; /* 14px */
+  --fs-400: 1rem; /* 16px */
+  --fs-600: 1.5rem; /* 24px */
+
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 800;
+  --fw-black: 900;
+}
+
+
+/* RESET */
+
+*{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font: inherit;
+ color: inherit;
+ box-sizing: border-box; 
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* UTILITY CLASSES */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+/* LAYOUT */
+
+body{
+  background: var(--clr-yellow);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  color: var(--clr-gray-950);
+  font-family: var(--ff-base);
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.preview-card{
+  background: var(--clr-white);
+  width: min(85%, 24rem);
+  padding: 1.35rem;
+  border: 1px solid var(--clr-gray-950);
+  border-radius: 1.5rem;
+  box-shadow: 
+    .5rem .5rem 0 var(--clr-gray-950);
+  display: grid;
+  gap: 1.4rem;
+}
+
+.preview-card__img-container{
+  border-radius: .6rem;
+  overflow: hidden;
+}
+
+.preview-card__img{
+  width: 100%;
+}
+
+.preview-card__label{
+  background: var(--clr-yellow);
+  font-weight: var(--fw-black);
+  font-size: var(--fs-350);
+  padding: .45em 1em;
+  border-radius: .3em;
+  display: block;
+  width: fit-content;
+  margin-bottom: 1.1em;
+}
+
+.preview-card__date{
+  display: block;
+  font-size: var(--fs-350);
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 1.2em;
+}
+
+.preview-card__title{
+  display: block;
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  margin-bottom: .7em;
+  transition: color .15s ease;
+}
+
+.preview-card__title:hover{
+  color: var(--clr-yellow);
+}
+
+.preview-card__paragraph{
+  color: var(--clr-gray-500);
+  line-height: 1.5;
+}
+
+.preview-card__pfp-container{
+  width: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.preview-card__autor{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.preview-card__pfp-image{
+  width: 100%;
+}
+
+.preview-card__autor-name{
+  font-weight: var(--fw-black);
+  font-size: var(--fs-350);
+}
